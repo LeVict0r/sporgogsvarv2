@@ -444,7 +444,7 @@ def view_admin():
     set_qp(view="admin", room=room, key=key)
 
     # Sidebar base-url (samme logik som på forsiden)
-    default_public_url = "https://sporgogsvar-appv2-4jb4dnsmshrhypicrqfjd2.streamlit.app"
+    default_public_url = "https://sporgogsvar-appv2.streamlit.app"
     env_base = os.environ.get("PUBLIC_BASE_URL")
     if env_base:
         base_url = env_base.rstrip("/")
