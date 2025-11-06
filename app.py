@@ -334,7 +334,7 @@ def view_home():
         st.markdown(f"### Session: `{s['id']}` {('– ' + s['title']) if s.get('title') else ''}")
 
         # Brug PUBLIC_BASE_URL hvis sat, ellers default til din offentlige URL
-        default_public_url = "https://sporgogsvar-appv2-4jb4dnsmshrhypicrqfjd2.streamlit.app"
+        default_public_url = "https://sporgogsvar-appv2.streamlit.app"
         env_base = os.environ.get("PUBLIC_BASE_URL")
         if env_base:
             base_url = env_base.rstrip("/")
