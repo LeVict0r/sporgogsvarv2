@@ -334,7 +334,7 @@ def view_home():
         st.markdown(f"### Session: `{s['id']}` {('– ' + s['title']) if s.get('title') else ''}")
 
         # Brug PUBLIC_BASE_URL hvis sat, ellers default til din offentlige URL
-        default_public_url = "https://sporgogsvar-appv2.streamlit.app"
+        default_public_url = "https://sporgogsvarv2.streamlit.app/"
         env_base = os.environ.get("PUBLIC_BASE_URL")
         if env_base:
             base_url = env_base.rstrip("/")
@@ -444,7 +444,7 @@ def view_admin():
     set_qp(view="admin", room=room, key=key)
 
     # Sidebar base-url (samme logik som på forsiden)
-    default_public_url = "https://sporgogsvar-appv2.streamlit.app"
+    default_public_url = "https://sporgogsvarv2.streamlit.app/"
     env_base = os.environ.get("PUBLIC_BASE_URL")
     if env_base:
         base_url = env_base.rstrip("/")
